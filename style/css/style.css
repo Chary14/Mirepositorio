@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* ------------PRINCIPAL---------------------*/
+html {
+  font-family: 'Zen Antique Soft', serif; }
+
+body {
+  background-image: linear-gradient(to left, #FFE6A7, #BB9457);
+  /* background-image: url("https://www.10wallpaper.com/wallpaper/1366x768/1203/The_world_famous_brands_watches_Featured_wallpaper_1366x768.jpg"); */ }
+
+/*---------------ESTILO MAIN----------------*/
+/*-------------MENU BOOTSTRAP------------*/
+ul li:hover ul {
+  display: block;
+  background-image: linear-gradient(to left, #ffecdf, #6F1D1B); }
+
+.navbar:hover {
+  background-image: linear-gradient(to left, #ffecdf, #6F1D1B); }
+
+.navbar {
+  background-image: linear-gradient(to right, #ffecdf, #6F1D1B); }
+
+/* ----------------ESTILO MAIN--------------- */
+h1 {
+  display: flex;
+  flex-direction: column;
+  color: #6F1D1B;
+  -webkit-text-stroke: whitesmoke 2px;
+  letter-spacing: 2px;
+  line-height: 0px;
+  font-style: italic;
+  font-size: 68px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 60px; }
+
+a {
+  text-decoration: none; }
+
+.principal {
+  margin: 10px;
+  padding: 0px; }
+
+.principal__titulo {
+  color: #6F1D1B; }
+
+.principal__subtitulo {
+  color: #432818; }
+
+.principal__texto {
+  color: white; }
+
+.secundario__titulo {
+  color: #6F1D1B; }
+
+.secundario__subtitulo {
+  color: #432818; }
+
+.secundario__texto {
+  color: black; }
+
+#carrusel img {
+  height: auto;
+  margin: 2rem;
+  padding-right: 150px;
+  padding-left: 100px; }
+
+/*-----------ESTILO TABLA MAS VENDIDOS--------------- */
+table {
+  border: 3px solid; }
+
+th {
+  background-color: #99582A;
+  border: 3px solid;
+  padding: 20px; }
+
+tr td {
+  border: 3px solid;
+  background-color: #BB9457;
+  padding: 10px; }
+
+/* -----------ESTILO PRODUCTOS---------------- */
+img {
+  width: 130px;
+  height: 130px; }
+
+.listImage {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Courier New', Courier, monospace;
+  color: transparent; }
+
+.relacionados__titulo {
+  color: black; }
+
+/* -------------ESTILO FOOTER------------------- */
+footer {
+  display: flex;
+  background-color: wheat; }
+
+footer img {
+  width: 30px;
+  height: 30px; }
+
+/* ---------------------GRID-------------------- */
+.contenedor {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "header           header           header" "main             main             lateral" "main             main             lateral" "relacionados     relacionados     lateral" "redes            redes            redes"; }
+
+.contenedor .header {
+  grid-area: header; }
+
+.contenedor .main {
+  grid-area: main; }
+
+.contenedor .lateral {
+  grid-area: lateral;
+  background-color: #99582A; }
+
+.contenedor .lateral:hover {
+  color: whitesmoke;
+  background-image: linear-gradient(#432818, #99582A); }
+
+.contenedor .relacionados {
+  grid-area: relacionados; }
+
+.contenedor .footer {
+  grid-area: footer;
+  background-color: black; }
+
+.contenedor .redes {
+  grid-area: redes; }
+
+.footer p {
+  color: white; }
+
+/* DESAFIO ANIMACIONES, TRANSFORMACIONES Y TRANSICIONES */
+.redes {
+  background-image: radial-gradient(white, #432818);
+  padding: 10px; }
+
+.relacionados {
+  padding: 100px;
+  background-image: linear-gradient(#99582A, silver); }
+
+.relacionados:hover {
+  /* transform: scaleY(2); */
+  transform: skewY(-1deg) skewX(1deg); }
+
+ul img:hover {
+  transform: scale(1.2, 1.2); }

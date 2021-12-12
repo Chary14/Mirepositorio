@@ -1,0 +1,46 @@
+$padding-size: 50px;
+$margin: 10px;
+$font-size: 10px;
+$width: 200px;
+$heigth: 150px;
+$color: #6F1D1B;
+
+
+/* -------------OPERACIONES------------------ */
+
+header {
+    padding-bottom: $padding-size/2;
+}
+
+h1 {
+    margin-bottom: $margin*2;
+}
+
+/* -------------CONDICIONALES------------------- */
+
+$fuente: 30px; /* Mi constante */
+  
+h2 {
+  @if $fuente == 30px { 
+    color: #6F1D1B;
+  } @else if $fuente == 20px {
+    color: white;
+  } @else {color: black;
+  }
+}
+
+/* -----------------BUCLE------------------------ */
+
+@for $var from 1 to 4 {
+  .pe#{$var} {font-size: $font-size * ($var*2);}
+}
+
+/* -------------------EACH------------------------- */
+
+@each $color in grey, brown {
+  .fondo-#{$color}{
+      background-color: #{$color};
+  }
+}
+
+
