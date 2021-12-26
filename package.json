@@ -1,17 +1,25 @@
 {
-  "name": "proyecto",
+  "name": "mi.repositorio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss style/scss/style.scss style/css/style.css",
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chary14/Mirepositorio.git"
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "node-sass": "^6.0.1",
+  "bugs": {
+    "url": "https://github.com/Chary14/Mirepositorio/issues"
+  },
+  "homepage": "https://github.com/Chary14/Mirepositorio#readme",
+  "dependencies": {
+    "node-sass": "^7.0.0",
     "nodemon": "^2.0.15"
   }
 }

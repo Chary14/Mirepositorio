@@ -1,0 +1,225 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+/* -----------COLORES----------- */
+/* -------------MEDIDAS------------- */
+/* ------------GRADIENTS-------------- */
+footer {
+  margin-top: 10rem;
+  display: flex;
+  background-color: wheat; }
+  footer img {
+    width: 30px;
+    height: 30px; }
+
+/* ------------PRINCIPAL---------------------*/
+html {
+  font-family: 'Zen Antique Soft', serif; }
+
+body {
+  background-image: linear-gradient(to left, #FFE6A7, #BB9457);
+  overflow-x: hidden; }
+
+.logo {
+  height: 200px;
+  width: 450px;
+  margin: auto;
+  display: block; }
+
+/*-------------MENU BOOTSTRAP------------*/
+ul li:hover ul {
+  display: block;
+  background-image: linear-gradient(to left, #ffecdf, #6F1D1B); }
+
+.navbar:hover {
+  background-image: linear-gradient(to right, #ffecdf, #6F1D1B); }
+
+.navbar {
+  background-image: linear-gradient(to left, #ffecdf, #6F1D1B); }
+
+/* ----------------ESTILO MAIN--------------- */
+h1 {
+  display: flex;
+  flex-direction: column;
+  color: #6F1D1B;
+  -webkit-text-stroke: #ffe6a7 2px;
+  letter-spacing: 2px;
+  line-height: 0px;
+  font-style: italic;
+  font-size: 68px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px; }
+
+a {
+  text-decoration: none; }
+
+h2 {
+  letter-spacing: 2px;
+  border-bottom-style: solid;
+  border-color: #6F1D1B;
+  margin: 3rem 4rem 3rem 4rem; }
+
+h4 {
+  margin: auto;
+  border-bottom-style: solid;
+  border-color: #6F1D1B;
+  margin: 3px; }
+
+.principal {
+  margin: 10px;
+  padding: 0px; }
+
+.principal__titulo {
+  color: #251605ff; }
+
+.principal__subtitulo {
+  color: #251605ff; }
+
+.principal__texto {
+  color: #251605ff; }
+
+.secundario__titulo {
+  color: #251605ff; }
+
+.secundario__subtitulo {
+  color: #251605ff; }
+
+.secundario__texto {
+  color: #251605ff; }
+
+/* -------------CONTACTOS---------------- */
+.btn {
+  color: #6F1D1B; }
+
+/* ----------------CARRUSEL------------------- */
+#carruselPrincipal {
+  width: 50%;
+  height: 90%;
+  margin: auto;
+  padding-top: 100px; }
+
+/* -----------ESTILO PRODUCTOS---------------- */
+img {
+  width: 200px;
+  height: 300px; }
+
+.listImage {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Courier New', Courier, monospace;
+  color: transparent; }
+
+.relacionados__titulo {
+  color: #251605ff; }
+
+/* ------------------------- VER MAS -----------------------*/
+.masTop1 {
+  background-image: url(/Mi.repositorio/media/img/relojmujer3.png); }
+
+.verMas {
+  margin-top: 50px; }
+
+.verMasPrincipal {
+  justify-content: space-evenly; }
+
+.masTop1 {
+  background-image: url(../media/img/vermas1.jpeg);
+  opacity: 0.5;
+  width: 25%;
+  height: 400px; }
+  .masTop1:hover {
+    opacity: 1; }
+  .masTop1 p {
+    color: white;
+    font-size: 50px; }
+  .masTop1 .boton1 {
+    text-align: center; }
+
+.masTop2 {
+  background-image: url(../media/img/vermas2.jpeg);
+  opacity: 0.5;
+  width: 25%;
+  height: 400px; }
+  .masTop2:hover {
+    opacity: 1; }
+  .masTop2 p {
+    color: white;
+    font-size: 50px; }
+  .masTop2 .boton1 {
+    text-align: center; }
+
+.masTop3 {
+  background-image: url(../media/img/vermas3.jpeg);
+  opacity: 0.5;
+  width: 25%;
+  height: 400px; }
+  .masTop3:hover {
+    opacity: 1; }
+  .masTop3 p {
+    color: white;
+    font-size: 50px; }
+  .masTop3 .boton1 {
+    text-align: center; }
+
+/* ---------------ESTILO PRODUCTOS------------- */
+.top1 h5 {
+  text-align: center; }
+
+.top1 .card {
+  margin: auto; }
+
+.top1 img {
+  margin: auto; }
+
+/* ------------------MEDIA QUERIES----------------- */
+/* TABLET */
+@media only screen and (max-width: 767px) and (min-width: 321px) {
+  .masTop1 {
+    width: 300px;
+    height: 300px;
+    margin: 5px; }
+  .masTop2 {
+    width: 300px;
+    height: 300px;
+    margin: 5px; }
+  .masTop3 {
+    width: 300px;
+    height: 300px;
+    margin: 5px; }
+  h5 {
+    margin: 1.5rem 5rem 1.5rem 5rem; }
+  html {
+    overflow-x: hidden; }
+  footer img {
+    width: 20px;
+    height: 20px;
+    margin: 5px; }
+  .logo {
+    width: 300px;
+    height: 120px; } }
+
+/* MOBILE */
+@media only screen and (max-width: 320px) {
+  .masTop1 {
+    margin: 5px;
+    width: 300px;
+    height: 300px; }
+  .masTop2 {
+    margin: 5px;
+    width: 300px;
+    height: 300px; }
+  .masTop3 {
+    margin: 5px;
+    width: 300px;
+    height: 300px; }
+  footer img {
+    width: 20px;
+    height: 20px;
+    margin: 5px; }
+  .logo {
+    width: 210px;
+    height: 80px; } }

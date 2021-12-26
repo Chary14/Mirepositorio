@@ -1,0 +1,233 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@import "variables";
+@import "footer";
+
+
+/* ------------PRINCIPAL---------------------*/
+
+html {
+    font-family:'Zen Antique Soft', serif;
+}
+
+body {
+    background-image: $fondo-principal;
+    overflow-x: hidden;
+}
+
+.logo{
+    height: 200px;
+    width: 450px;
+    margin: auto ;
+    display: block;
+}
+
+/*-------------MENU BOOTSTRAP------------*/
+
+ul li:hover ul {
+    display: block;
+    background-image: $fondo-menu;
+}
+
+.navbar:hover {
+    background-image: $fondo-menu-hover;
+}
+
+.navbar {
+    background-image: $fondo-menu;
+}
+
+/* ----------------ESTILO MAIN--------------- */
+h1 {
+    display: flex;
+    flex-direction: column;
+    color: $color-principal;
+    -webkit-text-stroke: $color-cuaternario 2px;
+    letter-spacing: 2px;
+    line-height: 0px;
+    font-style: italic;
+    font-size: 68px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: $medidaMarginPrincipal;
+    padding-bottom: $medidaMarginPrincipal;    
+}
+
+a {
+    text-decoration: none;
+}
+
+h2{
+    letter-spacing: 2px;
+    border-bottom-style: solid;
+    border-color: $color-principal;
+    margin: 3rem 4rem 3rem 4rem;
+}
+
+h4{
+    margin: auto;
+    border-bottom-style: solid;
+    border-color: $color-principal;
+    margin: 3px;
+}
+
+.principal{
+    margin: 10px;
+    padding: 0px;
+}
+.principal__titulo {
+    color: $color-fuente;
+}
+.principal__subtitulo {
+    color: $color-fuente;
+}
+
+.principal__texto {
+    color: $color-fuente;
+}
+
+.secundario__titulo {
+    color: $color-fuente;
+}
+.secundario__subtitulo {
+    color: $color-fuente;
+}
+
+.secundario__texto {
+    color: $color-fuente;
+}
+
+/* -------------CONTACTOS---------------- */
+
+.btn {
+    color: $color-principal
+}
+
+/* ----------------CARRUSEL------------------- */
+
+#carruselPrincipal{
+    width: 50%;
+    height: 90%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+/* -----------ESTILO PRODUCTOS---------------- */
+
+img {
+    width: 200px;
+    height:300px;
+}
+
+.listImage {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Courier New', Courier, monospace;
+    color: transparent;
+}
+
+.relacionados__titulo {
+    color: $color-fuente;
+}
+
+/* ------------------------- VER MAS -----------------------*/
+.masTop1{
+    background-image: url(/Mi.repositorio/media/img/relojmujer3.png);
+}
+.verMas{
+    margin-top: 50px;
+}
+.verMasPrincipal{
+    justify-content: space-evenly;
+}
+@each $numero in 1,2,3 {
+    .masTop#{$numero} {
+        background-image:url(../media/img/vermas#{$numero}.jpeg);
+        opacity: 0.5;
+        width: 25%;
+        height: 400px;
+        &:hover{
+        opacity: 1;
+    }
+    p{
+        color: white;
+        font-size: 50px;
+    }
+    .boton1{
+        text-align: center;
+    
+        }
+    }
+}
+/* ---------------ESTILO PRODUCTOS------------- */
+.top1{
+    h5{
+        text-align: center;
+    }
+    .card{
+        margin: auto;
+    }
+    img{
+        margin: auto;
+    }
+}
+
+/* ------------------MEDIA QUERIES----------------- */
+
+/* TABLET */
+
+@media only screen and (max-width: 767px) and (min-width: 321px){
+
+    @each $numero in 1,2,3 {
+        .masTop#{$numero} {
+            width: 300px;
+            height: 300px;
+            margin: 5px;
+            }
+        }
+        h5{
+            margin: 1.5rem 5rem 1.5rem 5rem;
+        }
+        html{
+            overflow-x: hidden;
+        }
+        footer{
+            img{
+                width: 20px;
+                height: 20px;
+                margin: 5px;
+            }
+        }
+        .logo{
+            width: 300px;
+            height: 120px;
+        }
+    }
+    
+    /* MOBILE */
+    
+    @media only screen and (max-width: 320px) {
+        @each $numero in 1,2,3 {
+            .masTop#{$numero} {
+                margin: 5px;
+                width: 300px;
+                height: 300px;
+                }
+            }
+            footer{
+                img{
+                    width: 20px;
+                    height: 20px;
+                    margin: 5px;
+                }
+            }
+            .logo{
+                width: 210px;
+                height: 80px;
+            }
+        }
+            
