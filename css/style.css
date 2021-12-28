@@ -8,8 +8,7 @@
 /* ------------GRADIENTS-------------- */
 footer {
   margin-top: 10rem;
-  display: flex;
-  background-color: wheat; }
+  display: flex; }
   footer img {
     width: 30px;
     height: 30px; }
@@ -103,10 +102,6 @@ h4 {
   padding-top: 100px; }
 
 /* -----------ESTILO PRODUCTOS---------------- */
-img {
-  width: 200px;
-  height: 300px; }
-
 .listImage {
   display: flex;
   justify-content: space-between;
