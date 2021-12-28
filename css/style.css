@@ -162,7 +162,12 @@ h4 {
   margin: auto; }
 
 .top1 img {
-  margin: auto; }
+  margin: auto;
+  width: 200px;
+  height: 300px; }
+
+.top1 img:hover {
+  transform: scale(1.2, 1.2); }
 
 /* ------------------MEDIA QUERIES----------------- */
 /* TABLET */
