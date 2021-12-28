@@ -95,12 +95,6 @@ h4 {
   color: #6F1D1B; }
 
 /* ----------------CARRUSEL------------------- */
-#carruselPrincipal {
-  width: 50%;
-  height: 90%;
-  margin: auto;
-  padding-top: 100px; }
-
 /* -----------ESTILO PRODUCTOS---------------- */
 .listImage {
   display: flex;
